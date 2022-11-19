@@ -97,3 +97,12 @@ button {
     font-weight: normal;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+@media (max-width:420px) {
+    .data-origem {
+        display: block;
+        width: 100%;
+    }
+    .data {
+        width: 100%;
+    }
+}
