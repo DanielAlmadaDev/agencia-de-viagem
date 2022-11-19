@@ -5,7 +5,14 @@
     font-family: raleway;
     font-weight: bold;
 }
+body {
+    background-color: rgb(240, 240, 232);
+}
+main {
+    background-color: rgba(209, 209, 203, 0.74);
+}
 header {
+    background-color: #fff;
     width: 100%;
     height: 55px;
     display: flex;
@@ -96,13 +103,4 @@ button {
     cursor: pointer;
     font-weight: normal;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-@media (max-width:420px) {
-    .data-origem {
-        display: block;
-        width: 100%;
-    }
-    .data {
-        width: 100%;
-    }
 }
