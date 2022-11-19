@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de viagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="topo">
+            <img src="imagens/assets/imagens/local-logo.png" alt="">
+            <p>Agência de Viagens</p>
+        </div>
+    </header>
+    <main>
+        <section class="img-fundo">
+            <div class="tituto-form">
+                <img src="imagens/assets/imagens/aviao.png" alt="">
+                <h2>Solicite um orçamento</h2>
+            </div>
+            <section class="section-formulario">
+                <h2>Informe seus dados</h2>
+                <form action="">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" placeholder="Digite seu nome" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="Digite seu e-mail" required>
+                    <label for="tel">Telefone</label>
+                    <input type="number" name="numero" placeholder="(xx)xxxxxxxx" required>
+                    <div class="data-origem">
+                        <div class="data">
+                            <label for="Data-ida">Data da ida</label>
+                            <input type="date" id="data" name="data-ida" required>
+                        </div>
+                        <div class="data">
+                            <label for="data-volta">Data da volta</label>
+                            <input type="date" id="data" name="data-volta" required>
+                        </div>
+                    </div>
+                    <div class="radios">
+                        <p>Quarto com cama infantil?</p>
+                        <input type="radio" name="quarto-infantil" id="sim" value="sim" checked required>
+                        <label for="sim">sim</label>
+                        <input type="radio" name="quarto-infantil" id="nao" value="nao" required>
+                        <label for="nao">Não</label>
+                    </div>
+                    <div class="preferancia-hospedagem">
+                        <p>Preferência da hospedagem</p>
+                        <input type="checkbox" id="piscina" name="preferencia-hospedagem[]" value="piscina">
+                        <label for="piscina">Piscina</label>
+                        <input type="checkbox" id="wifi" name="preferencia-hospedagem[]" value="Wi-Fi" >
+                        <label for="wifi">Wi-Fi</label>
+                        <input type="checkbox" id="garagem" name="preferencia-hospedagem[]" value="garagem" >
+                        <label for="garagem">Garagem</label>
+                        <input type="checkbox" id="suite" name="preferencia-hospedagem[]" value="suite" >
+                        <label for="suite">Suite</label>
+                    </div>
+                    <button type="submit">Solicitar orçamento</button>
+                </form>
+            </section>   
+        </section>
+        <section class="promocao">
+            
+        </section>
+    </main>
+</body>
+</html>
