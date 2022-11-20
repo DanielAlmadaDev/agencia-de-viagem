@@ -22,21 +22,46 @@
             </div>
             <section class="section-formulario">
                 <h2>Informe seus dados</h2>
-                <form action="">
+                <form method="post" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" placeholder="Digite seu nome" required>
                     <label for="email">E-mail</label>
                     <input type="email" name="email" placeholder="Digite seu e-mail" required>
                     <label for="tel">Telefone</label>
-                    <input type="number" name="numero" placeholder="(xx)xxxxxxxx" required>
+                    <input type="number" name="celular" placeholder="(xx)xxxxxxxx" required>
                     <div class="data-origem">
                         <div class="data">
                             <label for="Data-ida">Data da ida</label>
-                            <input type="date" id="data" name="data-ida" required>
+                            <input type="date" id="data" name="partida" required>
                         </div>
                         <div class="data">
                             <label for="data-volta">Data da volta</label>
-                            <input type="date" id="data" name="data-volta" required>
+                            <input type="date" id="data" name="chegada" required>
+                        </div>
+                    </div>
+
+                    <div class="local">
+                        <div class="origem">
+                            <label for="origem">Origem</label>
+                            <select id="origem" name="origem">
+                                     <option selected>Partindo de</option>
+                                     <option value="AM">Amazonas</option>
+                                     <option value="RJ">Rio de Janeiro</option>
+                                     <option value="SP">São Paulo</option>
+                                     <option value="GO">Goias</option>
+                                     <option value="MA">Maranhão</option>
+                            </select>
+                        </div>
+                        <div class="destino">
+                            <label for="destino">Destino</label>
+                            <select id="destino" name="destino">
+                                <option selected>Indo para</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="GO">Goias</option>
+                                <option value="MA">Maranhão</option>
+                            </select>
                         </div>
                     </div>
                     <p>Quarto com cama infantil?</p>
