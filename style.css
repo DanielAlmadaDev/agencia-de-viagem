@@ -104,17 +104,22 @@ button {
 .ofertas {
     max-width: 900px;
     width: 65%;
-    margin: 30px auto;
+    margin: 60px auto;
 }
-.imagens {
-    max-width: 800px;
+.ofertas p {
+    margin: 15px 0;
+}
+.pai {
     display: flex;
+    height: 290px;
+    position:relative;
     justify-content: space-between;
+    
 }
 .imagem-destaque {
-    position: relative;
-    width: calc(50% - 10px);
+    width: calc(97%/2);
     height: 100%;
+    position: relative;
 }
 .imagem-destaque img {
     object-fit: cover;
@@ -123,55 +128,72 @@ button {
 }
 .imagem-destaque p {
     position: absolute;
-    left: 0;
-    bottom: 0;
-
-    width: 100%;
-    background: rgb(0 0 0 / 50%);
-    font-size: 17px;
+    bottom: -14px;
     color: #fff;
-
-    padding: 5px 10px;
-    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(0, 0, 0,50%);
 }
-.quatro-imagens{
-    width: 48%;
+.quatro {
+    width: calc(98%/2);
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
 }
-.imagem-cima {
+.duas {
+    height: 45%;
+    width: 45%;
     position: relative;
-    width: 100%;
-    display: flex;
 }
-.imagem-cima img {
-    width: 95%;
-    height: 100%;
-    
-}
-.imagem-cima p {
-    position: relative;
-    bottom: 24px;
-    width: 95%;
-    font-size: 13px;
+.duas p {
+    position: absolute;
     color: #fff;
     background-color: rgb(0, 0, 0,50%);
-}
-.imagem-baixo {
     width: 100%;
-    display: flex;
-    flex-direction: row;
+    bottom: -14px;
 }
-.imagem-baixo img {
-    width: 95%;
+.duas img {
+    object-fit: cover;
+    width: 100%;
     height: 100%;
 }
-.imagem2 p {
-    width: 95%;
-    font-size: 13px;
-    position: relative;
+.explore-natureza {
+    width: 100%;
+    margin: 30px 0;
+}
+.explore-natureza h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.explore-natureza p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+.container-imagem-oferta {
+    display: flex;
+    justify-content: space-between;
+}
+.container-imagem-oferta figure {
+    width: calc(98%/2);
+    margin: 20px 0;
+    background-color: #fff;
+}
+.container-imagem-oferta figure img {
+    width: 100%;
+}
+footer {
     color: #fff;
-    background-color: rgb(0, 0, 0,50%);
-    bottom: 24px;
+    background-color: #5d15d1;
+    display: flex;
+    justify-content: space-around;
+}
+footer img {
+    width: 14px;
+    margin-right: 5px;
+}
+.icone {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    margin: 5px 0 5px 0;
 }
